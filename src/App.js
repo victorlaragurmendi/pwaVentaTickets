@@ -1,4 +1,4 @@
-import { BrowserRouter,Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/login/Home";
 import IniciarSesion from "./components/login/IniciarSesion";
 import RegistroUsuario from "./components/login/RegistroUsuario";
@@ -15,30 +15,31 @@ import PerfilUsuario from "./components/usuarios/PerfilUsuario";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} >
-    <Switch>
+    <div>
+      <BrowserRouter basename={process.env.PUBLIC_URL} >
+        <Switch>
       
-    {/* login */}
-      <Route  exact path="/" component={IniciarSesion}/>
-      <Route  exact path="/home" component={Home}/>
-      <Route  exact path="/registrousuario" component={RegistroUsuario}/>
-    {/* eventos */}
-      <Route  exact path="/crearevento" component={CrearEvento}/>
-      <Route  exact path="/detalleevento" component={DetalleEvento}/>
-      <Route  exact path="/editarevento" component={EditarEvento}/>
-    {/* compras */}
-      <Route  exact path="/detallecompras" component={DetalleCompras}/>
-      <Route  exact path="/pagar" component={Pagar}/>
-      <Route  exact path="/registrocompras" component={RegistroCompras}/>
-    {/* usuarios */}
-      <Route  exact path="/editarperfilusuario" component={EditarPerfilUsuario}/>
-      <Route  exact path="/perfiladministrador" component={PerfilAdministrador}/>
-      <Route  exact path="/perfilusuario" component={PerfilUsuario}/>
+          {/* login */}
+          <Route exact path="/" component={IniciarSesion} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/registrousuario" component={RegistroUsuario} />
+          {/* eventos */}
+          <Route exact path="/crearevento" component={CrearEvento} />
+          <Route exact path="/detalleevento" component={DetalleEvento} />
+          <Route exact path="/editarevento" component={EditarEvento} />
+          {/* compras */}
+          <Route exact path="/detallecompras" component={DetalleCompras} />
+          <Route exact path="/pagar" component={Pagar} />
+          <Route exact path="/registrocompras" component={RegistroCompras} />
+          {/* usuarios */}
+          <Route exact path="/editarperfilusuario" component={EditarPerfilUsuario} />
+          <Route exact path="/perfiladministrador" component={PerfilAdministrador} />
+          <Route exact path="/perfilusuario" component={PerfilUsuario} />
+          <Route></Route>
       
-      </Switch>
-      
-
-    </BrowserRouter>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
