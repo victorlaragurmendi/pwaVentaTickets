@@ -7,14 +7,14 @@ const PerfilAdministrador = () => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2">icono y nombreAdmin</div>
+                    <div className="p-2" ><a href="perfiladministrador">icono y nombreAdmin</a></div>
                 </div>
                 <div className="row">
 
                     <div>
                         <div className="d-flex justify-content-center mt-5 mb-5">
                             <div>
-                                <button className="btningresar">Crear Evento</button>
+                                <button className="btningresar" > <a href="crearevento">Crear Evento</a> </button>
                             </div>
                         </div>
                         <div className="row mt-3">
@@ -34,7 +34,7 @@ const PerfilAdministrador = () => {
                                     <div className="col-4 d-flex align-items-center">
                                         <div className="card mr-3">
                                             <div className="card-body">
-                                                <p>editar</p> <br></br>
+                                                <p><a href="editarevento" >editar</a></p> <br></br>
                                                 <p>eliminar</p>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@ const PerfilAdministrador = () => {
                                     <div className="col-4 d-flex align-items-center">
                                         <div className="card mr-3">
                                             <div className="card-body">
-                                                <p>editar</p> <br></br>
+                                                <p><a href="editarevento" >editar</a></p> <br></br>
                                                 <p>eliminar</p>
                                             </div>
                                         </div>
@@ -75,7 +75,7 @@ const PerfilAdministrador = () => {
 
                         <div className="d-flex justify-content-center mt-5">
                             <div>
-                                <button className="btningresar">Cerrar Sesion</button>
+                                <button className="btningresar"><a href="/">Cerrar Sesion</a></button>
                             </div>
                         </div>
                     </div>

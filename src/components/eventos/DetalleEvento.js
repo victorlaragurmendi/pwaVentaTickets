@@ -1,37 +1,15 @@
-import {React,useState} from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
-import Pagar from '../compras/Pagar'
-import PerfilUsuario from '../usuarios/PerfilUsuario'
 
 const DetalleEvento = () => {
 
-    const [verifydetalleevento, setverifydetallevento] = useState(false)
-
-    const [goHome,setgoHome]=useState(false); 
-
-    const DetalleEvent = () => {
-        setverifydetallevento(true)
-    }
-
-    const handlegoHome=()=>{
-        setgoHome(true)
-    }
-
-    if(goHome){
-        return <PerfilUsuario/>
-    }
-
-    if (verifydetalleevento) {
-
-        return <Pagar/>
-
-    } 
+ 
         return (
             <>
                 <container className="fluid fondo">
                     <div className=" navbar  d-flex flex-row-reverse">
-                        <div className="p-2" onClick={handlegoHome}>icono y nombre</div>
+                        <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                     </div>
                     <div className="row">
 
@@ -92,7 +70,7 @@ const DetalleEvento = () => {
                                                         <p className="d-flex justify-content-center">Subtotal</p> <br></br>
                                                     </div>
                                                     <div className="row ">
-                                                        <div className="d-flex justify-content-center "> <p>2</p></div>
+                                                        <div className="d-flex justify-content-center "> <p>$44</p></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +83,7 @@ const DetalleEvento = () => {
 
                                             <div className="d-flex justify-content-center mt-5">
                                                 <div>
-                                                    <button className="btningresar" onClick={DetalleEvent}>Comprar ahora</button>
+                                                    <button className="btningresar" ><a href="/pagar">Comprar ahora</a></button>
                                                 </div>
                                             </div>
 

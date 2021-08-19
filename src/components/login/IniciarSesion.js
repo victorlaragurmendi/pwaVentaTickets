@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
 
-const IniciarSesion = ({hndleButton,hndlCreateAcount}) => {
+const IniciarSesion = () => {
 
   
   return (
@@ -24,10 +24,16 @@ const IniciarSesion = ({hndleButton,hndlCreateAcount}) => {
             </div>
             <div className="d-flex justify-content-center mt-5">
               <div>
-                <button className="btningresar" onClick={hndleButton}>Ingresar</button>
+                <button className="btningresar" ><a href="/home">Ingresar</a></button>
               </div>
             </div>
-            <div className="d-flex justify-content-center mt-5 txtnotienescuenta"> <p onClick={hndlCreateAcount}>no tienes cuenta registrate</p></div>
+            <div className="d-flex justify-content-center mt-3 ">
+              <div>
+                <button className="btningresar" ><a href="/perfiladministrador">Ingresar como Admin (Pruebas)</a></button>
+              </div>
+            </div>
+            
+            <div className="d-flex justify-content-center mt-5 txtnotienescuenta"><a href="/registrousuario">no tienes cuenta registrate</a></div>
           </div>
         </div>
       </container>

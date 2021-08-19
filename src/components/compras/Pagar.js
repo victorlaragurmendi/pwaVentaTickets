@@ -1,32 +1,16 @@
-import {React,useState} from 'react'
+import {React} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
-import DetalleCompras from './DetalleCompras'
-import PerfilUsuario from '../usuarios/PerfilUsuario'
+
 
 const Pagar = () => {
 
-    const [verifyPay,setverifyPay]=useState(false)
-    const [goHome,setgoHome]=useState(false);    
-
-
-    const handleChangePage =()=>{
-        setverifyPay(true)
-    }
-    const handlegoHome=()=>{
-        setgoHome(true)
-    }
-    if(verifyPay){
-        return <DetalleCompras/>
-    }
-    if(goHome){
-        return <PerfilUsuario/>
-    }
+  
     return (
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" onClick={handlegoHome}>icono y nombre</div>
+                    <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                 </div>
                 <div className="row">
 
@@ -68,7 +52,7 @@ const Pagar = () => {
                                                     <p className="d-flex justify-content-center">Subtotal</p> <br></br>
                                                 </div>
                                                 <div className="row ">
-                                                    <div className="d-flex justify-content-center "> <p>2</p></div>
+                                                    <div className="d-flex justify-content-center "> <p>$44</p></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,7 +89,7 @@ const Pagar = () => {
                             <div>
                                 <div className="d-flex justify-content-center mt-5">
                                     <div>
-                                        <button className="btningresar" onClick={handleChangePage}>Realizar pago</button>
+                                        <button className="btningresar" ><a href="/detallecompras">Realizar pago</a></button>
                                     </div>
                                 </div>
                             </div>

@@ -1,23 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
-import PerfilUsuario from './PerfilUsuario';
 
 const EditarPerfilUsuario = () => {
-
-    const [goHome,setgoHome]=useState(false);    
-
-    const handlegoHome=()=>{
-        setgoHome(!goHome)
-        return <PerfilUsuario/>
-    }
-  
     
     return (
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" onClick={handlegoHome}>icono y nombre</div>
+                    <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                 </div>
                 <div className="row">
 
@@ -34,7 +25,7 @@ const EditarPerfilUsuario = () => {
                         </div>
                         <div className="d-flex justify-content-center mt-5">
                             <div>
-                                <button className="btningresar">Actualizar</button>
+                                <button className="btningresar" ><a href="/home">Actualizar</a></button>
                             </div>
                         </div>
 

@@ -1,36 +1,14 @@
-import {React,useState} from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
-import DetalleEvento from '../eventos/DetalleEvento'
-import PerfilUsuario from '../usuarios/PerfilUsuario'
 
 const Home = () => {
 
-    const [verifydetalleevento, setverifydetallevento] = useState(false)
-
-    const [goHome,setgoHome]=useState(false);    
-
-    const handlegoHome=()=>{
-        setgoHome(true)
-    }
-    if(goHome){
-        return <PerfilUsuario/>
-    }
-    
-
-    const DetalleEvent = () => {
-        setverifydetallevento(true)
-    }
-
-    if (verifydetalleevento) {
-        return <DetalleEvento />
-    }
-    else {
         return (
             <>
                 <container className="fluid fondo">
                     <div className=" navbar  d-flex flex-row-reverse">
-                        <div className="p-2" onClick={handlegoHome}>icono y nombre</div>
+                        <div className="p-2"  ><a href="/perfilusuario">icono y nombre</a></div>
                     </div>
                     <div className="row">
 
@@ -60,7 +38,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary" onClick={DetalleEvent}>Go somewhere</a>
+                                                    <p href="" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,7 +48,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 2</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +66,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,7 +76,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 2</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,7 +126,7 @@ const Home = () => {
 
             </>
         )
-    }
+    
 
 }
 

@@ -24,7 +24,7 @@ const RegistroUsuario = () => {
                         </div>
                         <div className="d-flex justify-content-center mt-5">
                             <div>
-                                <button className="btningresar">Registrar</button>
+                                <button className="btningresar" ><a href="/home">Registrar</a></button>
                             </div>
                         </div>
                         
