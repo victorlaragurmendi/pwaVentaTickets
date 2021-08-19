@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pwaVentaTickets/static/css/main.1c9f037d.chunk.css",
+    "main.js": "/pwaVentaTickets/static/js/main.b49afe0b.chunk.js",
+    "main.js.map": "/pwaVentaTickets/static/js/main.b49afe0b.chunk.js.map",
+    "runtime-main.js": "/pwaVentaTickets/static/js/runtime-main.91313053.js",
+    "runtime-main.js.map": "/pwaVentaTickets/static/js/runtime-main.91313053.js.map",
+    "static/css/2.818011ed.chunk.css": "/pwaVentaTickets/static/css/2.818011ed.chunk.css",
+    "static/js/2.524863ba.chunk.js": "/pwaVentaTickets/static/js/2.524863ba.chunk.js",
+    "static/js/2.524863ba.chunk.js.map": "/pwaVentaTickets/static/js/2.524863ba.chunk.js.map",
+    "static/js/3.cdd8623c.chunk.js": "/pwaVentaTickets/static/js/3.cdd8623c.chunk.js",
+    "static/js/3.cdd8623c.chunk.js.map": "/pwaVentaTickets/static/js/3.cdd8623c.chunk.js.map",
+    "index.html": "/pwaVentaTickets/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/pwaVentaTickets/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.1c9f037d.chunk.css.map": "/pwaVentaTickets/static/css/main.1c9f037d.chunk.css.map",
+    "static/js/2.524863ba.chunk.js.LICENSE.txt": "/pwaVentaTickets/static/js/2.524863ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91313053.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.524863ba.chunk.js",
+    "static/css/main.1c9f037d.chunk.css",
+    "static/js/main.b49afe0b.chunk.js"
+  ]
+}
