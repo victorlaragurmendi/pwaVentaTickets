@@ -15,8 +15,9 @@ import PerfilUsuario from "./components/usuarios/PerfilUsuario";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
     <Switch>
+      
     {/* login */}
       <Route  exact path="/" component={IniciarSesion}/>
       <Route  exact path="/home" component={Home}/>
