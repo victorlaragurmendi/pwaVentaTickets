@@ -10,11 +10,12 @@ const Home = () => {
                     <div className=" navbar  d-flex flex-row-reverse">
                         <div className="p-2"  ><a href="/perfilusuario">icono y nombre</a></div>
                     </div>
-                    <div className="row">
+                    <div className="row card-body card">
 
                         <div>
-                            <div className="d-flex justify-content-center  txtiniciarsesion"> <p>Eventos</p></div>
-
+                        <div class="title-box">
+                            <h1>Eventos</h1>
+                        </div>
                             <div className="row">
                                 <div className="col-2 "></div>
                                 <div className="col-8 ">

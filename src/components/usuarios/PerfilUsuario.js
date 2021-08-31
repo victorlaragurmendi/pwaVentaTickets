@@ -15,6 +15,12 @@ const PerfilUsuario = () => {
                    <div className="col-2 "></div> 
                     <div className="col-8 card-body card">
                         
+
+                                <div class="title-box">
+
+                                    <h1>Gestión de Perfil</h1>
+
+                                </div>
                             <div className="mt-4">
                                 <button className="btningresar w-100 d-block btn btn-outline-secondary btn-nueva"  ><a href="registrocompras">Registro de Compras</a></button>
                             </div>

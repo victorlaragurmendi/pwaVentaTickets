@@ -13,7 +13,15 @@ const EditarPerfilUsuario = () => {
                 <div className="row ">
 
                     <div className="col-8 card-body card"> 
-                        <div className="d-flex justify-content-center mt-5 pt-5 txtiniciarsesion"> <p>Actualizar Perfil</p></div>
+
+                   
+                        
+                        <div class="title-box">
+
+                            <h1>Actualizar Perfil</h1>
+
+                        </div>
+                        
                         <div className="d-flex justify-content-center mt-5">
                             <input type="text" className="un" id="inlineFormInputName1" placeholder="nombre" />
                         </div>

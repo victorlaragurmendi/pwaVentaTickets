@@ -27,7 +27,6 @@ const PerfilAdministrador = () => {
 <div class="title-box">
 
   <h1>Gestión de eventos</h1>
-  <p class="lead">Este proyecto muestra cómo hacer una aplicación web MVC con PHP.El objetivo es msotrar cómo realizar una aplicación utilizando éste patrón de diseño.</p>
   
 </div>
 
