@@ -11,26 +11,29 @@ const RegistroUsuario = () => {
                 </div>
                 <div className="row">
 
-                    <div>
-                        <div className="d-flex justify-content-center mt-5 pt-5 txtiniciarsesion"> <p>Registro Usuario</p></div>
-                        <div className="d-flex justify-content-center mt-5">
-                            <input type="text" className=" " id="inlineFormInputName1" placeholder="nombre" />
-                        </div>
-                        <div className="d-flex justify-content-center mt-2">
-                            <input type="text" className=" " id="inlineFormInputName2" placeholder="email" />
-                        </div>
-                        <div className="d-flex justify-content-center mt-2">
-                            <input type="text" className=" " id="inlineFormInputName3" placeholder="contraseña" />
-                        </div>
-                        <div className="d-flex justify-content-center mt-5">
-                            <div>
-                                <button className="btningresar" ><a href="/home">Registrar</a></button>
-                            </div>
-                        </div>
-                        
-                    </div>
+                 
 
                 </div>
+
+
+                <div className="main">
+        <p className="sign" align="center">Registro Usuario</p> 
+        
+       
+
+        <input type="text" className="un" id="inlineFormInputName1" placeholder="nombre" />
+
+        <input type="text" className="un" id="inlineFormInputName1" placeholder="email" />
+        
+        <input type="password" className="un" id="inlineFormInputName1" placeholder="contraseña" />
+
+        <button className="submit " ><a href="/home">Registrar</a></button>
+         
+        
+      </div> 
+
+
+
 
             </container>
 

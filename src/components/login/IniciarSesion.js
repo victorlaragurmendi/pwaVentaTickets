@@ -11,31 +11,25 @@ const IniciarSesion = () => {
         <div className=" navbar  d-flex flex-row-reverse">
           <div className="p-2">icono</div>
         </div>
-        <div className="row">
-          <div>
-            <div className="d-flex justify-content-center mt-5 pt-5 txtiniciarsesion"> <p>Iniciar Sesion</p></div>
 
-            
-            <div className="d-flex justify-content-center mt-5">
-              <input type="text" className=" " id="inlineFormInputName1" placeholder="email" />
-            </div>
-            <div className="d-flex justify-content-center mt-2">
-              <input type="text" className=" " id="inlineFormInputName2" placeholder="contraseña" />
-            </div>
-            <div className="d-flex justify-content-center mt-5">
-              <div>
-                <button className="btningresar" ><a href="/home">Ingresar</a></button>
-              </div>
-            </div>
-            <div className="d-flex justify-content-center mt-3 ">
-              <div>
-                <button className="btningresar" ><a href="/perfiladministrador">Ingresar como Admin (Pruebas)</a></button>
-              </div>
-            </div>
-            
-            <div className="d-flex justify-content-center mt-5 txtnotienescuenta"><a href="/registrousuario">no tienes cuenta registrate</a></div>
-          </div>
-        </div>
+
+
+
+      <div className="main">
+        <p className="sign" align="center">Iniciar sesión</p> 
+        
+       
+
+        <input type="text" className="un" id="inlineFormInputName1" placeholder="email" />
+
+        <input type="password" className="pass" id="inlineFormInputName1" placeholder="contraseña" />
+        
+        <button className="submit " ><a href="/home">Ingresar</a></button>
+        <p className="forgot" align="center"><a href="/perfiladministrador">Ingresar como Admin (Pruebas)</a></p> 
+        <p className="forgot" align="center"><a  href="/registrousuario">no tienes cuenta registrate</a></p> 
+
+      </div> 
+       
       </container>
 
 
