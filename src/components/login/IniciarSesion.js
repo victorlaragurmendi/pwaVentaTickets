@@ -24,7 +24,7 @@ const IniciarSesion = () => {
 
         <input type="password" className="pass" id="inlineFormInputName1" placeholder="contraseña" />
         
-        <button className="submit " ><a href="/home">Ingresar</a></button>
+        <button className="submit btn-info" ><a href="/home">Ingresar</a></button>
         <p className="forgot" align="center"><a href="/perfiladministrador">Ingresar como Admin (Pruebas)</a></p> 
         <p className="forgot" align="center"><a  href="/registrousuario">no tienes cuenta registrate</a></p> 
 
