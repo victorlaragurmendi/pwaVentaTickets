@@ -39,7 +39,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <p href="" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></p>
+                                                    <p href="" className="btn btn-primary" ><a href="/detalleevento">Comprar este evento</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -49,7 +49,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 2</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Comprar este evento</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Comprar este evento</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 2</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Go somewhere</a></a>
+                                                    <a href="#" className="btn btn-primary" ><a href="/detalleevento">Comprar este evento</a></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +95,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" className="btn btn-primary">Comprar este evento</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,7 +105,7 @@ const Home = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">Evento Social 2</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" className="btn btn-primary">Comprar este evento</a>
                                                 </div>
                                             </div>
                                         </div>
