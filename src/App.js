@@ -12,10 +12,17 @@ import EditarPerfilUsuario from "./components/usuarios/EditarPerfilUsuario";
 import PerfilAdministrador from "./components/usuarios/PerfilAdministrador";
 import PerfilUsuario from "./components/usuarios/PerfilUsuario";
 
+import {Provider} from "react-redux"
+import store from "../src/components/store"
+
+
+
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
+      
+    <div >
       <BrowserRouter>
 
         <Switch>
@@ -39,6 +46,8 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
+   
+    </Provider>
   );
 }
 

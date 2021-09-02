@@ -2,7 +2,9 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
 
-const PerfilAdministrador = () => {
+import { connect } from "react-redux";
+
+const PerfilAdministrador = ({eventos}) => {
     return (
         <>
             <container className="fluid fondo">
@@ -13,9 +15,6 @@ const PerfilAdministrador = () => {
                     
                 </div>
                 
-
-
-
 
 
 
@@ -36,105 +35,32 @@ const PerfilAdministrador = () => {
   <thead>
     <tr>
       <th>Nombre</th>
-      <th>Localización</th>
-      <th>Teléfono</th>
-      <th>Email</th>
-      <th>Acciones</th>
+      <th>Precio</th>
+      <th>Descripcion</th>
+      
     </tr>
   </thead>
+  
   <tbody>
-
-    <tr>
+  {eventos.map(j => (
+  <tr>
+  
       <td>
-        Marqués de Riscal
+        {j.nombre}
       </td>
       <td>
-        La Rioja </td>
+        {j.precio} </td>
       <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
+        {j.descripcion}</td>
+      
       <td>
         <a class="btn btn-default btn-outline-dark" href="editarevento">Editar</a>
         <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
 
     </tr>
-    <tr>
-      <td>
-        Marqués de Riscal
-      </td>
-      <td>
-        La Rioja </td>
-      <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
-      <td>
-        <a class="btn btn-default btn-outline-dark" href="editarevento">Editar</a>
-        <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
-
-    </tr>
-          <tr>
-      <td>
-        Marqués de Riscal
-      </td>
-      <td>
-        La Rioja </td>
-      <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
-      <td>
-        <a class="btn btn-default btn-outline-dark" href="editarevento">Editar</a>
-        <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
-
-    </tr>
-          <tr>
-      <td>
-        Marqués de Riscal
-      </td>
-      <td>
-        La Rioja </td>
-      <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
-      <td>
-        <a class="btn btn-default btn-outline-dark" href="editarevento">Editar</a>
-        <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
-
-    </tr>
-          <tr>
-      <td>
-        Marqués de Riscal
-      </td>
-      <td>
-        La Rioja </td>
-      <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
-      <td>
-        <a class="btn btn-default btn-outline-dark" href="editarevento">Editar</a>
-        <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
-
-    </tr>
-          <tr>
-      <td>
-        Marqués de Riscal
-      </td>
-      <td>
-        La Rioja </td>
-      <td>
-        945010203 </td>
-      <td>
-        test@mail.com </td>
-      <td>
-        <a class="btn btn-default btn-outline-dark" href="">Editar</a>
-        <a class="btn btn-default btn-outline-dark" href="">Borrar</a> </td>
-
-    </tr>
+  ))}    
   </tbody>
+
 </table>
 
 
@@ -155,4 +81,9 @@ const PerfilAdministrador = () => {
     )
 }
 
-export default PerfilAdministrador
+const mapStateToProps = state => ({
+
+  eventos: state.eventos
+})
+
+export default connect(mapStateToProps)(PerfilAdministrador) 

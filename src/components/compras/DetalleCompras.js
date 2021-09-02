@@ -1,11 +1,11 @@
-import {React} from 'react'
+import { React } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
+import { connect } from "react-redux";
+
+const DetalleCompras = ({ pedido }) => {
 
 
-const DetalleCompras = () => {
-
-  
 
     return (
         <>
@@ -17,7 +17,13 @@ const DetalleCompras = () => {
 
                     <div>
                         <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Detalle Pedido</p></div>
+                        {pedido.map(j => (
+
+                            <div className="d-flex justify-content-center  txtiniciarsesion mt-3" key={j.id}> <p>{j.nombre}</p></div>
+                        ))}
                         <hr></hr>
+
+                        {pedido.map(j => (
                         <div className="row mt-3">
                             <div className="col-1 "></div>
                             <div className="col-10 ">
@@ -29,7 +35,7 @@ const DetalleCompras = () => {
                                                     <p className="d-flex justify-content-center">Precio</p> <br></br>
                                                 </div>
                                                 <div className="row ">
-                                                    <div className="d-flex justify-content-center "> <p>$22</p></div>
+                                                    <div className="d-flex justify-content-center "> <p>{j.precio}</p></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -53,7 +59,7 @@ const DetalleCompras = () => {
                                                     <p className="d-flex justify-content-center">Subtotal</p> <br></br>
                                                 </div>
                                                 <div className="row ">
-                                                    <div className="d-flex justify-content-center "> <p>$44</p></div>
+                                                    <div className="d-flex justify-content-center "> <p>$50</p></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,6 +70,7 @@ const DetalleCompras = () => {
                             </div>
                             <div className="col-1 "></div>
                         </div>
+                        ))}
                         <hr></hr>
                         <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Codigo QR</p></div>
                         <div className="row mt-3">
@@ -95,4 +102,9 @@ const DetalleCompras = () => {
     )
 }
 
-export default DetalleCompras
+const mapStateToProps = state => ({
+
+    pedido: state.pedido
+})
+
+export default connect(mapStateToProps)(DetalleCompras) 

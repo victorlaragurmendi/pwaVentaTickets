@@ -9,7 +9,7 @@ const IniciarSesion = () => {
     
       <container className="fluid fondo">
         <div className=" navbar  d-flex flex-row-reverse">
-          <div className="p-2">icono</div>
+          <div className="p-2"></div>
         </div>
 
 
