@@ -13,14 +13,25 @@ const DetalleCompras = ({ pedido }) => {
                 <div className=" navbar  d-flex flex-row-reverse">
                     <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                 </div>
-                <div className="row">
+                <div className="row card-body card">
 
                     <div>
+<<<<<<< HEAD
                         <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Detalle Pedido</p></div>
                         {pedido.map(j => (
 
                             <div className="d-flex justify-content-center  txtiniciarsesion mt-3" key={j.id}> <p>{j.nombre}</p></div>
                         ))}
+=======
+                       
+
+                        <div class="title-box">
+
+                    <h1>Detalle Pedido</h1>
+
+                    </div>
+
+>>>>>>> 0b7b73947b8697ae32a3224516914d0f0bf627e7
                         <hr></hr>
 
                         {pedido.map(j => (

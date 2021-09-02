@@ -10,25 +10,31 @@ const EditarEvento = () => {
                 <div className=" navbar  d-flex flex-row-reverse">
                     <div className="p-2"  ><a href="/perfiladministrador">admin</a></div>
                 </div>
-                <div className="row">
+                <div className="row  card-body card">
 
                     <div>
-                        <div className="d-flex justify-content-center mt-5 pt-5 txtiniciarsesion"> <p>Editar Evento</p></div>
-                        <div className="d-flex justify-content-center mt-5">
-                            <input type="text" className=" " id="inlineFormInputName2" placeholder="Nombre Evento" />
+
+                        <div class="title-box">
+
+                            <h1>Editar Evento</h1>
+
+                        </div>
+
+                        <div className="d-flex justify-content-center mt-2">
+                            <input type="text" className="un" id="inlineFormInputName2" placeholder="Nombre Evento" />
                         </div>
                         <div className="d-flex justify-content-center mt-2">
-                            <input type="text" className=" " id="inlineFormInputName2" placeholder="Precio" />
+                            <input type="text" className="un" id="inlineFormInputName2" placeholder="Precio" />
                         </div>
                         <div className="d-flex justify-content-center mt-2">
-                            <input type="text" className=" " id="inlineFormInputName2" placeholder="Cantidad" />
+                            <input type="text" className="un" id="inlineFormInputName2" placeholder="Cantidad" />
                         </div>
                         <div className="d-flex justify-content-center mt-2">
                              
                             <div className="row">
                                 <div className="col-1"></div>
                                 <div className="col-10">
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="descripcion..."></textarea>
+                                    <textarea className="un form-control" id="exampleFormControlTextarea1" rows="3" placeholder="descripcion..."></textarea>
                                 </div>
                                 <div className="col-1"></div>
                             </div>
@@ -36,7 +42,7 @@ const EditarEvento = () => {
                         </div>
                         <div className="d-flex justify-content-center mt-5">
                             <div>
-                                <button className="btningresar" ><a href="/perfiladministrador">Actualizar</a></button>
+                                <button className="btningresar btningresar btn btn-info btn-nueva" ><a href="/perfiladministrador">Actualizar</a></button>
                             </div>
                         </div>
 
