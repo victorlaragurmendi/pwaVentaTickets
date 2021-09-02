@@ -8,13 +8,18 @@ const RegistroCompras = () => {
   
     return (
         <>
-            <container className="fluid fondo">
+            <container className="fluid fondo ">
                 <div className=" navbar  d-flex flex-row-reverse">
                     <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                 </div>
-                <div className="row">
+                <div className=" row card-body card ">
                     <div>
-                        <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Registro de compras</p></div>
+                        
+                        <div class="title-box">
+
+                            <h1>Registro de compras</h1>
+
+                            </div>
                         <hr></hr>
                         <div className="row mt-3">
                             <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p><a href="detallecompras">Evento Social 1</a></p></div>
@@ -68,7 +73,7 @@ const RegistroCompras = () => {
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row card-body card ">
                     <div>
                         <hr></hr>
                         <div className="row mt-3">
@@ -122,7 +127,7 @@ const RegistroCompras = () => {
 
                     </div>
                 </div>
-                <div className="row">
+                <div className="row card-body card ">
                     <div>
                         <hr></hr>
                         <div className="row mt-3">

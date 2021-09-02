@@ -13,10 +13,17 @@ const DetalleCompras = () => {
                 <div className=" navbar  d-flex flex-row-reverse">
                     <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                 </div>
-                <div className="row">
+                <div className="row card-body card">
 
                     <div>
-                        <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Detalle Pedido</p></div>
+                       
+
+                        <div class="title-box">
+
+                    <h1>Detalle Pedido</h1>
+
+                    </div>
+
                         <hr></hr>
                         <div className="row mt-3">
                             <div className="col-1 "></div>

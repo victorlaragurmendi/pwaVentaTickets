@@ -11,10 +11,14 @@ const DetalleEvento = () => {
                     <div className=" navbar  d-flex flex-row-reverse">
                         <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
                     </div>
-                    <div className="row">
+                    <div className="row   card-body card">
 
                         <div>
-                            <div className="d-flex justify-content-center  txtiniciarsesion mt-3"> <p>Evento Social 1</p></div>
+                        <div class="title-box">
+
+                        <h1>Evento Social 1</h1>
+
+                        </div>
 
 
                             <div className="row mt-3">
@@ -27,6 +31,8 @@ const DetalleEvento = () => {
                                                     <h5 className="card-title">Evento Social 1</h5>
                                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                                 </div>
+
+
                                             </div>
                                         </div>
 
@@ -83,7 +89,7 @@ const DetalleEvento = () => {
 
                                             <div className="d-flex justify-content-center mt-5">
                                                 <div>
-                                                    <button className="btningresar" ><a href="/pagar">Comprar ahora</a></button>
+                                                    <button className="btningresar btningresar btn btn-info btn-nueva" ><a href="/pagar">Comprar ahora</a></button>
                                                 </div>
                                             </div>
 
