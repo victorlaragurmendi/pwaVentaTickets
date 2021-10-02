@@ -45,8 +45,8 @@ const Home = ({ eventos, pedido, AgregarAlCarrito }) => {
                             <div className="col-10 ">
                                 <div className="row">
                                     {eventos.map(j => (
-                                        <div className="col-6 " key={j.id}>
-                                            <div className="card ">
+                                        <div className="col-4 " key={j.id}>
+                                            <div className="card">
                                                 <div className="card-body">
                                                     <h5 className="card-title">{j.nombre}</h5>
                                                     <p className="card-text">{j.descripcion}</p>
