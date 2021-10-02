@@ -9,7 +9,6 @@ const PerfilUsuario = () => {
         <>
             <container className="fluid fondo ">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2">icono y nombre</div>
                 </div>
                 <div className="row   ">
                    <div className="col-2 "></div> 

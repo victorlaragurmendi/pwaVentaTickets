@@ -7,7 +7,7 @@ const RegistroUsuario = () => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2">icono</div>
+                    
                 </div>
                 <div className="row">
 

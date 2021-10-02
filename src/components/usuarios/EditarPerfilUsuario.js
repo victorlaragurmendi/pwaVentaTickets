@@ -8,7 +8,12 @@ const EditarPerfilUsuario = () => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
+                <div className="p-2"  >
+                        <a href="/perfilusuario">
+                            <i class="fas fa-user"></i>
+                            usuario
+                        </a>
+                    </div>
                 </div>
                 <div className="row ">
 

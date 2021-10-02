@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
 import { connect } from "react-redux";
-
+import logo from '../../codigoqr.png'
 const RegistroCompras = ({pedido}) => {
 
   
@@ -10,7 +10,12 @@ const RegistroCompras = ({pedido}) => {
         <>
             <container className="fluid fondo ">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
+                <div className="p-2"  >
+                        <a href="/perfilusuario">
+                            <i class="fas fa-user"></i>
+                            usuario
+                        </a>
+                    </div>
                 </div>
                 {pedido.map(j => (
                 <div className="row">
@@ -48,6 +53,9 @@ const RegistroCompras = ({pedido}) => {
                                                 </div>
                                                 <div className="row ">
                                                     <div className="d-flex justify-content-center "> <p>2</p></div>
+
+                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -64,10 +72,28 @@ const RegistroCompras = ({pedido}) => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="col-12 d-flex align-items-center">
+                                        <div className="card-body">
+                                            <div className="col">
+                                                <div className="row">
+                                                <div className="card-body d-flex justify-content-center"  >
+                                                <p className="card-text">
+                                               <img src={logo} width="150px" height="150px"></img>
+                                                </p>
+
+                                            </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   
 
                                 </div>
                             </div>
                             <div className="col-1 "></div>
+                            
                         </div>
                         <hr></hr>
 

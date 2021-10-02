@@ -2,7 +2,7 @@ import { React } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
 import { connect } from "react-redux";
-
+import logo from "../../codigoqr.png"
 const DetalleCompras = ({ pedido }) => {
 
 
@@ -11,7 +11,12 @@ const DetalleCompras = ({ pedido }) => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" ><a href="/perfilusuario">icono y nombre</a></div>
+                <div className="p-2"  >
+                        <a href="/perfilusuario">
+                            <i class="fas fa-user"></i>
+                            usuario
+                        </a>
+                    </div>
                 </div>
                 <div className="row card-body card">
 
@@ -79,9 +84,10 @@ const DetalleCompras = ({ pedido }) => {
                                 <div className="row">
                                     <div className="col-12 ">
                                         <div className="card ">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Evento Social 1</h5>
-                                                <p className="card-text">aqi va el codigo QR</p>
+                                            <div className="card-body d-flex justify-content-center"  >
+                                                <p className="card-text">
+                                               <img src={logo} width="150px" height="150px"></img>
+                                                </p>
 
                                             </div>
                                         </div>

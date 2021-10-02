@@ -1,6 +1,9 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
+import '../../index.css'
+
+
 
 import { connect } from "react-redux";
 
@@ -9,7 +12,14 @@ const PerfilAdministrador = ({eventos}) => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2" ><a href="perfiladministrador">icono y nombreAdmin </a>
+                  <div className="flaticon-user"></div>
+                    <div className="p-2" >
+                    <div className="p-2"  >
+                        <a href="/perfilusuario">
+                            <i class="fas fa-user"></i>
+                            admin
+                        </a>
+                    </div>
                     <a class="btn btn-danger btn-nueva" href="/"> Cerrar sesión                               </a>
                     </div>
                     

@@ -3,14 +3,6 @@ import {createStore,applyMiddleware} from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 
-
-
-
-
-
-
-
-
 const initialState={
     eventos:[
         {id:1,nombre:"Pinturas Goya",precio:25,descripcion:"Muestra de arte Impresionista de las obras mas importantes del exponente Goya"},

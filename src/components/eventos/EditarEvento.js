@@ -8,7 +8,12 @@ const EditarEvento = () => {
         <>
             <container className="fluid fondo">
                 <div className=" navbar  d-flex flex-row-reverse">
-                    <div className="p-2"  ><a href="/perfiladministrador">admin</a></div>
+                <div className="p-2"  >
+                        <a href="/perfilusuario">
+                            <i class="fas fa-user"></i>
+                            admin
+                        </a>
+                    </div>
                 </div>
                 <div className="row  card-body card">
 
